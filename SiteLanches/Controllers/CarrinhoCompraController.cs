@@ -10,23 +10,23 @@ namespace SiteLanches.Controllers
         //para acessar o carrinho de compra  e lanche preciso injetar um instancia de carrinhodeLanche e Lanche 
         // private readonly - varivel do tipo leitura
         private readonly ILanchesRepository _lanchesRepository;
-        private readonly CarinhoCompra _carinhoCompra;
+        private readonly CarrinhoCompra _carrinhoCompra;
 
         //Construtor
-        public CarrinhoCompraController(ILanchesRepository lanchesRepository, CarinhoCompra carinhoCompra)
+        public CarrinhoCompraController(ILanchesRepository lanchesRepository, CarrinhoCompra carinhoCompra)
         {
             _lanchesRepository = lanchesRepository;
-            _carinhoCompra = carinhoCompra;
+            _carrinhoCompra = carinhoCompra;
         }
 
         public IActionResult Index()
         {
-            var itens = _carinhoCompra.GetCarrinhoCompraItems();
-            _carinhoCompra.CarrinhoCompraItems= itens;
+            var itens = _carrinhoCompra.GetCarrinhoCompraItems();
+            _carrinhoCompra.CarrinhoCompraItems= itens;
             var carrinhoCompraVm = new CarrinhoCompraViewModel
             {
-                CarinhoCompra = _carinhoCompra,
-                CarrinhoCompraTotal = _carinhoCompra.GetCarrinhoCompraTotal()
+                CarinhoCompra = _carrinhoCompra,
+                CarrinhoCompraTotal = _carrinhoCompra.GetCarrinhoCompraTotal()
 
             };
             return View(carrinhoCompraVm);//retornando um carrinhoDeCompra como parametro
@@ -38,7 +38,7 @@ namespace SiteLanches.Controllers
 
             if (lancheSelecionado != null)
             {
-                _carinhoCompra.AdicionarAoCarinho(lancheSelecionado);
+                _carrinhoCompra.AdicionarAoCarinho(lancheSelecionado);
             }
             return RedirectToAction("Index");
 
@@ -51,7 +51,7 @@ namespace SiteLanches.Controllers
 
             if (lancheSelecionado != null)
             {
-                _carinhoCompra.RemoveDoCarrinho(lancheSelecionado);
+                _carrinhoCompra.RemoveDoCarrinho(lancheSelecionado);
             }
             return RedirectToAction("Index");
 

@@ -21,7 +21,7 @@ public class Startup
         UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         services.AddTransient<ILanchesRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
-        services.AddScoped(sp => CarinhoCompra.GetCarinho(sp)); 
+        services.AddScoped(sp => CarrinhoCompra.GetCarinho(sp)); 
         //AddTransient<> - criado toda vez que o serviço é solicitado
         //AddScoped<> - criado a cada request- a cada requisição temos uma nova instancia do servico
         //AddSingleton<> Criada se ainda não tiver registrada como uma instancia - todas as requisição

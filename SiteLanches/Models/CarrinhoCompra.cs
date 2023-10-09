@@ -7,19 +7,19 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace SiteLanches.Models
 {
-    public class CarinhoCompra
+    public class CarrinhoCompra
     {
         private readonly AppDbContext _context;
 
         //injetar o contexto no construtor
-        public CarinhoCompra(AppDbContext Context)
+        public CarrinhoCompra(AppDbContext Context)
         {
             _context = Context;
         }
         public string CarrinhoCompraId { get; set; }
         public List<CarrinhoCompraItem> CarrinhoCompraItems { get; set; }
 
-        public static CarinhoCompra GetCarinho(IServiceProvider services)
+        public static CarrinhoCompra GetCarinho(IServiceProvider services)
         {
 
             // services.GetRequiredService<IHttpContextAccessor>() ? // se a minha requisição não
@@ -38,7 +38,7 @@ namespace SiteLanches.Models
             session.SetString("CarrinhoId", carrinhoId);
 
             //retorna o carinho com o contexto e o Id atribuido ou obtido
-            return new CarinhoCompra(context)
+            return new CarrinhoCompra(context)
             {
                 CarrinhoCompraId = carrinhoId
 
