@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\FaleConosco.jpg",
+      "PackagePath": "staticwebassets\\images\\FaleConosco.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\Mapa.png",
+      "PackagePath": "staticwebassets\\images\\Mapa.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\Mapa_resized.png",
+      "PackagePath": "staticwebassets\\images\\Mapa_resized.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\address.png",
+      "PackagePath": "staticwebassets\\images\\address.png"
+    },
+    {
       "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\carousel11.jpg",
       "PackagePath": "staticwebassets\\images\\carousel11.jpg"
     },
@@ -35,6 +51,18 @@
     {
       "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\excluir.png",
       "PackagePath": "staticwebassets\\images\\excluir.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\fale-conosco.png",
+      "PackagePath": "staticwebassets\\images\\fale-conosco.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\mail (1).png",
+      "PackagePath": "staticwebassets\\images\\mail (1).png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\images\\telephone-call.png",
+      "PackagePath": "staticwebassets\\images\\telephone-call.png"
     },
     {
       "Id": "C:\\Users\\User\\Source\\Repos\\Lanches\\SiteLanches\\wwwroot\\js\\site.js",
